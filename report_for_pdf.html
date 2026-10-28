@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CICD pipeline and Monitoring Tools - Summary Report</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 22mm 20mm 20mm 20mm;
+            @top-center {
+                content: "CICD pipeline and Monitoring Tools";
+                font-family: "Segoe UI", Arial, sans-serif;
+                font-size: 9pt;
+                color: #555;
+            }
+        }
+        body {
+            font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+            color: #222;
+            line-height: 1.45;
+            margin: 0;
+            padding: 0;
+            font-size: 10.5pt;
+        }
+        .page {
+            page-break-after: always;
+            position: relative;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .page-header {
+            text-align: center;
+            font-size: 9pt;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .title-container {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        h1.main-title {
+            color: #17476e;
+            font-size: 24pt;
+            font-weight: 700;
+            line-height: 1.3;
+            margin: 0;
+        }
+        .student-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .student-table th {
+            background-color: #12456e;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: left;
+            padding: 11px 16px;
+            font-size: 11pt;
+            border: 1px solid #0d3656;
+        }
+        .student-table td {
+            padding: 12px 16px;
+            border: 1px solid #c8d4df;
+            font-size: 10.5pt;
+            vertical-align: middle;
+        }
+        .student-table td.label-col {
+            width: 32%;
+            font-weight: 600;
+            color: #1f2937;
+            background-color: #f8fafc;
+        }
+        .student-table td.value-col {
+            width: 68%;
+            font-weight: 700;
+            color: #0b3d68;
+            background-color: #ffffff;
+        }
+        .student-table a {
+            color: #0b3d68;
+            text-decoration: underline;
+            word-break: break-all;
+        }
+        h2.sec-heading {
+            color: #000000;
+            font-size: 13pt;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        h3.tool-heading {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #111;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        h4.sub-heading {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: #222;
+            margin-top: 6px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin: 6px 0;
+            text-align: justify;
+        }
+        ul {
+            margin: 4px 0 10px 22px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        .code-list li {
+            font-family: "Consolas", "Courier New", monospace;
+            font-size: 9.8pt;
+            color: #111;
+            background-color: #f6f8fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: table;
+            margin-bottom: 4px;
+        }
+        .note-text {
+            font-size: 9.5pt;
+            color: #4b5563;
+            font-style: italic;
+            margin: 4px 0 4px 0;
+        }
+        .sub-bullet {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            font-weight: 600;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1 -->
+    <div class="page">
+        <div class="page-header">CICD pipeline and Monitoring Tools</div>
+        
+        <div class="title-container">
+            <h1 class="main-title">CICD pipeline and Monitoring Tools<br>Summary Report</h1>
+        </div>
+
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th style="width: 32%;">Details</th>
+                    <th style="width: 68%;">Student Entry</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="label-col">Student Name</td>
+                    <td class="value-col">Pratham Kadam</td>
+                </tr>
+                <tr>
+                    <td class="label-col">Roll Number(s)</td>
+                    <td class="value-col">DS 14 (PRN: 2324000362)</td>
+                </tr>
+                <tr>
+                    <td class="label-col">Department / Class</td>
+                    <td class="value-col">Final Year B.Tech CSE (Data Science) - Semester VII</td>
+                </tr>
+                <tr>
+                    <td class="label-col">Academic Year</td>
+                    <td class="value-col">A.Y 2026-27</td>
+                </tr>
+                <tr>
+                    <td class="label-col">GitHub Repository URL</td>
+                    <td class="value-col"><a href="https://github.com/prathham-k21/mldevops-cicd.git">https://github.com/prathham-k21/mldevops-cicd.git</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page">
+        <div class="page-header">CICD pipeline and Monitoring Tools</div>
+
+        <h2 class="sec-heading">1. Problem Statement</h2>
+        <p>
+            Develop an end-to-end Machine Learning Web Application for <strong>Heart Disease Risk Prediction (CardioPulse)</strong> and implement the complete DevOps / MLOps lifecycle on a Windows PC. The project utilizes <strong>Scikit-Learn</strong> for training an accurate clinical risk classification model and <strong>Flask</strong> for serving both an interactive web dashboard and a REST API. <strong>Git</strong> is employed for local version control, <strong>GitHub</strong> for cloud source-code hosting, <strong>Docker</strong> for application containerization, and <strong>Jenkins</strong> for automating the continuous integration and deployment pipeline (including automated pytest test suites and container image builds). In addition, <strong>Prometheus monitoring</strong> and health-check endpoints are incorporated to capture real-time latency, request rates, and prediction distribution metrics. Each tool is installed, configured, verified, and orchestrated using Windows commands to ensure a seamless transition from development to production.
+        </p>
+
+        <h2 class="sec-heading" style="margin-top: 18px;">2. Tools: Environment Setup</h2>
+
+        <h3 class="tool-heading">1. Python and Flask — Web Application Development</h3>
+        <h4 class="sub-heading">1. Environment Setup</h4>
+        <ul>
+            <li>Install Python 3.13 and configure the system PATH.</li>
+            <li>Install Flask, Scikit-Learn, Pandas, Joblib, Prometheus Client, and Pytest.</li>
+            <li>Train and verify the Heart Disease classification model via <code>train.py</code> generating <code>model/heart_disease_model.joblib</code>.</li>
+            <li>Verify the installed versions of Python and pip, and run unit tests.</li>
+        </ul>
+        <h4 class="sub-heading">2. Commands to Run on Windows</h4>
+        <ul class="code-list">
+            <li>python --version</li>
+            <li>pip --version</li>
+            <li>pip install -r requirements.txt</li>
+            <li>python train.py</li>
+            <li>python -m pytest -v</li>
+            <li>python app.py</li>
+        </ul>
+
+        <h3 class="tool-heading">2. Git — Version Control</h3>
+        <h4 class="sub-heading">1. Environment Setup</h4>
+        <ul>
+            <li>Install Git for Windows.</li>
+            <li>Configure the Git username and email, and verify the installed Git version.</li>
+            <li>Initialize the repository and track application source files.</li>
+        </ul>
+        <h4 class="sub-heading">2. Commands to Run on Windows</h4>
+        <ul class="code-list">
+            <li>git --version</li>
+            <li>git init</li>
+            <li>git status</li>
+            <li>git add .</li>
+            <li>git commit -m "feat: complete MLOps CI/CD &amp; Monitoring project with report"</li>
+        </ul>
+
+        <h3 class="tool-heading">3. GitHub — Source-Code Hosting</h3>
+        <h4 class="sub-heading">1. Environment Setup</h4>
+        <ul>
+            <li>Create a GitHub account and a remote repository.</li>
+            <li>Configure Git authentication using an appropriate method, such as Git Credential Manager or SSH.</li>
+            <li>Link local repository to GitHub remote and push the main branch.</li>
+        </ul>
+        <h4 class="sub-heading">2. Commands to Run on Windows</h4>
+        <div class="note-text">Configured with the actual URL of the GitHub repository:</div>
+        <ul class="code-list">
+            <li>git remote add origin https://github.com/prathham-k21/mldevops-cicd.git</li>
+            <li>git branch -M main</li>
+            <li>git push -u origin main</li>
+            <li>git pull origin main</li>
+        </ul>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page">
+        <div class="page-header">CICD pipeline and Monitoring Tools</div>
+
+        <h3 class="tool-heading" style="margin-top: 10px;">4. Docker — Application Containerization</h3>
+        <h4 class="sub-heading">1. Environment Setup</h4>
+        <ul>
+            <li>Install Docker Desktop and configure WSL 2 if required.</li>
+            <li>Verify the Docker Engine status and installed Docker and Docker Compose versions.</li>
+            <li>Construct Dockerfile specifying base image, dependencies, exposed ports, and healthcheck probe.</li>
+        </ul>
+        <h4 class="sub-heading">2. Commands to Run on Windows</h4>
+        <ul class="code-list">
+            <li>docker --version</li>
+            <li>docker compose version</li>
+            <li>docker info</li>
+            <li>docker build -t cardiopulse-ml-app .</li>
+            <li>docker run -d -p 5000:5000 --name cardiopulse-service cardiopulse-ml-app</li>
+            <li>docker ps</li>
+        </ul>
+
+        <h3 class="tool-heading" style="margin-top: 18px;">5. Jenkins — Continuous Integration and Continuous Deployment</h3>
+        <h4 class="sub-heading">1. Environment Setup</h4>
+        <ul>
+            <li>Install a Java JDK version (Java 23) compatible with the selected Jenkins release.</li>
+            <li>Install and configure Jenkins, and verify the Java and Jenkins versions.</li>
+            <li>Configure the required Git and Docker integrations for the CI/CD pipeline using Declarative <code>Jenkinsfile</code>.</li>
+        </ul>
+        <h4 class="sub-heading">2. Commands to Run on Windows</h4>
+        <div class="sub-bullet">For Jenkins installed directly on Windows:</div>
+        <ul class="code-list">
+            <li>java -version</li>
+            <li>git --version</li>
+            <li>docker --version</li>
+            <li>jenkins.exe start — only if using a Jenkins installation that provides this service command.</li>
+        </ul>
+        <div class="sub-bullet">For Jenkins running as a Docker container named jenkins:</div>
+        <ul class="code-list">
+            <li>docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:lts</li>
+            <li>docker ps</li>
+            <li>docker logs jenkins</li>
+            <li>docker start jenkins</li>
+            <li>docker exec jenkins java -version</li>
+        </ul>
+
+        <h3 class="tool-heading" style="margin-top: 18px;">6. Monitoring Tools — Prometheus &amp; Health Telemetry</h3>
+        <h4 class="sub-heading">1. Environment Setup</h4>
+        <ul>
+            <li>Integrate <code>prometheus-client</code> into the Flask application to record request counters and latency histograms.</li>
+            <li>Configure endpoint <code>/health</code> for real-time service uptime and model availability status checks.</li>
+            <li>Expose <code>/metrics</code> endpoint for live telemetry collection and monitoring dashboard consumption.</li>
+        </ul>
+        <h4 class="sub-heading">2. Commands to Run on Windows</h4>
+        <ul class="code-list">
+            <li>curl -s http://localhost:5000/health</li>
+            <li>curl -s http://localhost:5000/metrics</li>
+            <li>curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d "{\"age\":55,\"sex\":1,\"cp\":0,\"trestbps\":140,\"chol\":250,\"fbs\":0,\"restecg\":1,\"thalach\":140,\"exang\":1,\"oldpeak\":2.0}"</li>
+        </ul>
+    </div>
+
+</body>
+</html>
