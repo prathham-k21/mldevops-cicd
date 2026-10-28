@@ -4,11 +4,11 @@
 ### Student Details
 | Details | Student Entry |
 | :--- | :--- |
-| **Student Name** | *[Enter Your Name]* |
-| **Roll Number(s)** | *[Enter Your Roll Number]* |
-| **Department / Class** | Final Year B. Tech - CSE (Artificial Intelligence and Machine Learning) Sem - VII |
-| **Academic Year** | A.Y 2026-27 |
-| **GitHub Repository URL** | *[Enter Your GitHub Repository URL]* |
+| **Student Name** | **Pratham Kadam** |
+| **Roll Number(s)** | **DS 14 (PRN: 2324000362)** |
+| **Department / Class** | **Final Year B.Tech CSE (Data Science) - Semester VII** |
+| **Academic Year** | **A.Y 2026-27** |
+| **GitHub Repository URL** | [https://github.com/prathham-k21/mldevops-cicd.git](https://github.com/prathham-k21/mldevops-cicd.git) |
 
 ---
 
@@ -59,8 +59,7 @@ Develop an end-to-end Machine Learning Web Application for **Heart Disease Risk 
 - Set the default branch to main and push local commits to the remote origin.
 
 #### 2. Commands to Run on Windows
-*(Replace `REPOSITORY_URL` with the actual URL of your GitHub repository)*
-- `git remote add origin REPOSITORY_URL`
+- `git remote add origin https://github.com/prathham-k21/mldevops-cicd.git`
 - `git branch -M main`
 - `git push -u origin main`
 - `git pull origin main`
@@ -114,3 +113,4 @@ Develop an end-to-end Machine Learning Web Application for **Heart Disease Risk 
 - `curl -s http://localhost:5000/health`
 - `curl -s http://localhost:5000/metrics`
 - `curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d "{\"age\":55,\"sex\":1,\"cp\":0,\"trestbps\":140,\"chol\":250,\"fbs\":0,\"restecg\":1,\"thalach\":140,\"exang\":1,\"oldpeak\":2.0}"`
+

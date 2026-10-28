@@ -61,11 +61,11 @@ def create_report_docx(filename="LAB-ISE2-CICD_pipeline_and_Monitoring_Tools.doc
     col_widths = [Inches(2.2), Inches(4.3)]
     headers = [
         ("Details", "Student Entry"),
-        ("Student Name", ""),
-        ("Roll Number(s)", ""),
-        ("Department / Class", "Final Year B. Tech - CSE (Artificial Intelligence and Machine Learning) Sem - VII"),
+        ("Student Name", "Pratham Kadam"),
+        ("Roll Number(s)", "DS 14 (PRN: 2324000362)"),
+        ("Department / Class", "Final Year B.Tech CSE (Data Science) - Semester VII"),
         ("Academic Year", "A.Y 2026-27"),
-        ("GitHub Repository URL", "")
+        ("GitHub Repository URL", "https://github.com/prathham-k21/mldevops-cicd.git")
     ]
 
     for i, (col1, col2) in enumerate(headers):
@@ -80,17 +80,19 @@ def create_report_docx(filename="LAB-ISE2-CICD_pipeline_and_Monitoring_Tools.doc
         cell_1.text = col2
         
         if i == 0:
-            set_cell_background(cell_0, "1F4E79")
-            set_cell_background(cell_1, "1F4E79")
+            set_cell_background(cell_0, "17476E")
+            set_cell_background(cell_1, "17476E")
             cell_0.paragraphs[0].runs[0].font.bold = True
             cell_0.paragraphs[0].runs[0].font.color.rgb = RGBColor(255, 255, 255)
             cell_1.paragraphs[0].runs[0].font.bold = True
             cell_1.paragraphs[0].runs[0].font.color.rgb = RGBColor(255, 255, 255)
         else:
-            cell_0.paragraphs[0].runs[0].font.bold = True
+            cell_0.paragraphs[0].runs[0].font.bold = False
             cell_0.paragraphs[0].runs[0].font.size = Pt(10.5)
             if len(cell_1.paragraphs[0].runs) > 0:
                 cell_1.paragraphs[0].runs[0].font.size = Pt(10.5)
+                cell_1.paragraphs[0].runs[0].font.bold = True
+                cell_1.paragraphs[0].runs[0].font.color.rgb = RGBColor(0, 45, 98)
 
     doc.add_page_break()
 
@@ -278,3 +280,4 @@ def create_report_docx(filename="LAB-ISE2-CICD_pipeline_and_Monitoring_Tools.doc
 
 if __name__ == "__main__":
     create_report_docx()
+

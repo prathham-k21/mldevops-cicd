@@ -6,10 +6,12 @@
 [![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange.svg)](https://scikit-learn.org/)
 [![Monitoring](https://img.shields.io/badge/Monitoring-Prometheus-red.svg)](https://prometheus.io/)
 
+> **Student**: Pratham Kadam (Roll: DS 14, PRN: 2324000362)  
 > **Course**: ML DevOps Laboratory (UAMPC0732)  
-> **Class**: Final Year B. Tech - CSE (AIML), Semester - VII  
+> **Class**: Final Year B. Tech - CSE (Data Science), Semester - VII  
 > **Evaluation**: ISE - 2 (10 Marks)  
-> **Use Case**: End-to-End MLOps Application with CI/CD Pipeline & Monitoring
+> **Use Case**: End-to-End MLOps Application with CI/CD Pipeline & Monitoring  
+> **Repository**: [https://github.com/prathham-k21/mldevops-cicd](https://github.com/prathham-k21/mldevops-cicd)
 
 ---
 
@@ -142,3 +144,4 @@ CardioPulse includes built-in Prometheus metrics exposed at `/metrics`:
 - `http_requests_total{endpoint, method, status}`: Monitors incoming traffic volume and HTTP status codes.
 - `http_request_duration_seconds{endpoint}`: Histogram tracking latency of ML inference requests.
 - `model_predictions_total{risk_category}`: Tracks real-time ratio between High Risk vs Low Risk predictions to detect data and prediction drift.
+
